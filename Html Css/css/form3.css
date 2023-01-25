@@ -1,0 +1,30 @@
+.mainDiv {
+    width: 900px;
+    background-color: #A9D7D1;
+}
+
+.text {
+    text-align: center;
+}
+
+.mainDiv1 {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.maybe {
+    display: flex;
+}
+
+.gv {
+    display: inline-block;
+    width: 330px;
+    text-align: right;
+    padding: 10px;
+
+}

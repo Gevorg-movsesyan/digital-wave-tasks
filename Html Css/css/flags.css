@@ -1,0 +1,92 @@
+.flex {
+
+    width: 250px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.flex div {
+    flex: 1
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue_flag {
+    background-color: #0D69D0
+}
+
+.orange {
+    background-color: orange;
+}
+
+.black {
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.white {
+    background-color: white;
+}
+
+.japan {
+    width: 250px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.japan_flag {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.Switzerland {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vertical {
+    width: 130px;
+    height: 30px;
+    background-color: white;
+
+}
+
+.horizont {
+    width: 30px;
+    height: 130px;
+    background-color: white;
+    position: absolute;
+}
+
+.display {
+    display: flex;
+    background-color: gray;
+    justify-content:space-evenly;
+   
+}

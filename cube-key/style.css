@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+#square {
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    position: absolute;
+}
+
+p {
+    text-align: center;
+}

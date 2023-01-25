@@ -1,0 +1,41 @@
+textarea {
+  resize: none;
+}
+
+#photo {
+  color: transparent;
+
+}
+
+#photo::before {
+  content: "Choose...";
+  border: 1px solid black;
+  background-color: hwb(0 92% 5%);
+  color: black;
+  padding: 1px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#photo:hover {
+  opacity: 0.7;
+}
+
+.selectForm {
+  height: 20px;
+
+
+}
+
+#submit {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 70px;
+  border-color: darkgray;
+  letter-spacing: 1px;
+
+}
