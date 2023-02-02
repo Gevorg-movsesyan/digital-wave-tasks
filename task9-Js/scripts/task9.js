@@ -1,6 +1,12 @@
+//2. Ստեղծել to do list. 
+//Օգտատերը էկրանին տեսնում է մեկ մուտքագրման դաշտ, որի կողքին կա կոճակ՝ Ավելացնել։ Տվյալ դաշտի միջոցով օգտատերը մուտքագրում է այն առաջադրանքները, որոնք 
+//ուզում է կատարել։ Օրինակ՝ կատարել տնային աշխատանքը, գնալ կինո նայելու և այլն։ 
+//Մուտքագրված տվյալները ավելանում են ներքևում ՝ կատարման ենթակա ցուցակում, որի կողքին կա "Կատարված է" և "Ջնջել" կոճակները։ 
+//Ջնջել կոճակը սեղմելուց հետո առաջադրանքը անհետանում է, իսկ կատարված-ի դեպքում ավելանում ներքևում՝ մեկ այլ ցուցակում։ 
+
 let text = document.getElementById('text');
-let container = document.getElementById('containerone');
-let container3 = document.getElementById("containertwo");
+let containerone = document.getElementById('containerone');
+let containertwo = document.getElementById("containertwo");
 
 function disiredTask() {
 
@@ -11,7 +17,7 @@ function disiredTask() {
         p.append(text.value);
         p.append(button1);
         p.append(button2);
-        container.append(p);
+        containerone.append(p);
         button1.innerHTML = "Կատարված է"
         button2.innerHTML = "Ջնջել"
         text.value = ''
@@ -19,7 +25,7 @@ function disiredTask() {
 
     button1.addEventListener('click', addFunction);
     function addFunction() {
-        container3.append(p);
+        containertwo.append(p);
         button1.remove();
     }
 
@@ -32,6 +38,15 @@ function disiredTask() {
 }
 
 
+//1․ Օգտատերը մուտքագրում է թիվ։ Անհրաժեշտ է ստեղծել այնքան գալդիատոր, որքան օգտատիրոջ մուտքագրված թիվն է։ 
+//Յուրաքանչյուր գլադիատորը ունի 
+//health (կյանք) - պատահական գեներացված թիվ 80-100 միջակայքում
+//power (ուժ)- պատահական գեներացված թիվ 5-15 միջակայքում
+//Գլադիատորները ստեղծելուց հետո անհրաժեշտ է պատահական վերցնել 2 գլադիատոր։ Առաջին գլադիատորը հարվածում է երկրոդին և երկրորդի 
+//կյանքը պակասում է այնքանով որքանով առաջին գլադիատորի ուժն է։ Այնուհետև 2-րդը հարվածում է առաջինին նույն սկզբունքով։ 
+//Մեկական հարվածից հետո նորից պատահական վերցնում ենք 2 գլադիատոր։ 
+//Վերը նշված գործողությունները անում ենք այնքան ժամանակ մինչև մնա 1 գլադիատոր։ 
+//Հաղթողին տպում ենք կոնսոլում։ 
 
 let gladiatorNum = +prompt('Enter the number of gladiators');
 let arr = [];
