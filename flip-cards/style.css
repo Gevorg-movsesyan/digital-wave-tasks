@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+.style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #DDF3E5;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.card-style {
+    width: 70px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.text-style {
+    display: none;
+    pointer-events: none;
+}
+
+.opened-text-style {
+    display: block;
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Html Css/photo/img.png');
+    background-size: cover;
+}

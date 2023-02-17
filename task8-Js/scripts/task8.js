@@ -20,7 +20,7 @@ let getNumbersFunc = (n) => {
     }
     return "Սխալ գնահատական"
 }
-console.log(getNumbersFunc(9))
+console.log(getNumbersFunc(9));
 
 //2. Գրել ֆունկցիա, որը պարամետրով ստանում է կամայական n բնական թիվ և վերադարձնում 0-ից n թվի
 //միջև ընկած թվերի գումարը (n-ը ներառյալ)։
@@ -32,7 +32,7 @@ let amountFunc = (n) => {
     }
     return sum
 }
-console.log(amountFunc(6))
+console.log(amountFunc(6));
 
 //3․ Գրել ֆունկցիա, որը պարամետրով ստանում է կամայական n բնական թիվ և վերադարձնում n թվի ֆակտորյալը։
 
@@ -62,8 +62,15 @@ let primeNumberfunc = (num) => {
         return true
     }
 }
-console.log(primeNumberfunc(9))
+console.log(primeNumberfunc(9));
 
+//5․ Գրել ֆունկցիա, որը պարամետրով ստանում է (x1, y1) և (x2, y2) կետերի կոորդինատները և վերադարձնում 2 կետերի
+//միջև եղած հեռավորությունը:
+
+let distanceBetweenPoints = (x1, y1, x2, y2) => {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+}
+console.log(distanceBetweenPoints(1, 2, 4, 6));
 
 //6. Գրել ֆունկցիա, որը պարամետրով ստանում է arr զանգված և վերադարձնում նոր զանգված առանց կրկնվող տարրերի։
 //օր․ [ 4, 4, 7, 8, 9, 5, 5, 6] --> [ 4, 7, 8, 9, 5, 6 ]:
@@ -74,20 +81,28 @@ let deleteDuobleArrFunc = (arr) => {
     return arr.filter((el, index) => arr.indexOf(el) === index);
 }
 
-console.log(deleteDuobleArrFunc([4, 4, 7, 8, 9, 5, 5, 6, 4]));
+console.log(deleteDuobleArrFunc([4, 4, 7, 8, 9, 5, 5, 6]));
 
 // տարբերակ 2 
 let deleteDuobleArrFunc2 = () => {
     let newArr = []
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== arr[i + 1]) {
-            newArr.push(arr[i])
+        let x = false;
+        for (let j = 0; j < newArr.length; j++) {
+            if (arr[i] === newArr[j]) {
+                x = true;
+                break
+            }
         }
+        if (!x) {
+            newArr.push(arr[i]);
+        }
+
     }
     return newArr
 
 }
-console.log(deleteDuobleArrFunc2())
+console.log(deleteDuobleArrFunc2());
 
 //7.https://edabit.com/challenge/8Qg78sf5SNDEANKti
 let chickens = 2;
@@ -108,7 +123,7 @@ let hour = 60 * min;
 let minHoursFunc = (hours, minutes) => {
     return (hours * hour) + (minutes * min)
 }
-console.log(minHoursFunc(1, 3))
+console.log(minHoursFunc(1, 3));
 
 //9․ https://edabit.com/challenge/vvuAkYEAArrZvmp6X
 
@@ -125,14 +140,14 @@ console.log(bitwiseOrFunc(7, 12))
 let bitwiseXorFunc = (a, b) => {
     return a ^ b
 }
-console.log(bitwiseXorFunc(7, 12))
+console.log(bitwiseXorFunc(7, 12));
 
 //10. https://edabit.com/challenge/3kcrnpHk7krNZdnKK
 
 let converNumberFunc = (num) => {
     return num.toString(2)
 }
-console.log(converNumberFunc(5))
+console.log(converNumberFunc(5));
 
 //11. https://edabit.com/challenge/Q3n42rEWanZSTmsJm
 
@@ -165,7 +180,7 @@ let minMaxFunc2 = () => {
         max
     ]
 }
-console.log(minMaxFunc2())
+console.log(minMaxFunc2());
 
 //12. https://edabit.com/challenge/xsi99TwpGyFC8KS6d
 
@@ -175,13 +190,7 @@ let splitFunc = (n) => {
     newArr.push(Math.ceil(n / 2))
     return newArr
 }
-console.log(splitFunc(11))
-
-
-
-
-
-
+console.log(splitFunc(11));
 
 
 

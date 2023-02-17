@@ -49,8 +49,7 @@ function disiredTask() {
 //Հաղթողին տպում ենք կոնսոլում։ 
 
 let gladiatorNum = +prompt('Enter the number of gladiators');
-let arr = [];
-
+let arr = []
 let createRandomGladiator = () => {
     for (let i = 0; i < gladiatorNum; i++) {
         let gladiator = {
@@ -62,7 +61,6 @@ let createRandomGladiator = () => {
 
     }
 }
-
 let getWinnerGladiator = () => {
     while (arr.length > 1) {
         let a = Math.floor(Math.random() * arr.length);
@@ -74,12 +72,10 @@ let getWinnerGladiator = () => {
         if (arr[a].health > 0) {
             arr[b].health -= arr[a].power;
         }
-
         arr = arr.filter(item => item.health > 0);
-    }
 
+    }
     console.log("haxtox e chanachvum: ", arr[0]);
 }
-
 createRandomGladiator();
 getWinnerGladiator();

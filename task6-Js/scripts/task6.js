@@ -84,3 +84,12 @@ let func = () => {
     return sum
 }
 console.log(func())
+
+
+
+
+
+  
+
+
+    

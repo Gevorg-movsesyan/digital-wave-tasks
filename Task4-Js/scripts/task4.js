@@ -199,7 +199,7 @@ let minMaxFunc2 = () => {
 }
 console.log(minMaxFunc2())
 
-let arr1 = ["Hello", 15, "World", true, 89, 157, [1, 3, 7]];
+let arr1 = ["Hello", 15, "World", true, 89, 157, [1, 3, 7],65];
 
 //15. Գտնել զանգվախի էլեմենտներից քանիսի տիպն է number
 
@@ -238,7 +238,7 @@ console.log(arr3.length)
 //17․ Տպել զանգվածի վերջին էլեմենտի բոլոր էլեմենտները
 
 let lastElemFunc = () => {
-  for (let i = arr1.length - 1; i < arr1.length; i++) {
+  for (let i = arr1.length - 1; i < arr1.length; i--) {
     if (Array.isArray(arr1[i])) {
       return arr1[i]
     }
