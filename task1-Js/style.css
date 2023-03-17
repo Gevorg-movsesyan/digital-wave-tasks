@@ -1,0 +1,159 @@
+.main_container {
+    border: 1px solid black;
+    width: 950px;
+    padding: 25px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.textDiv {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.first_text {
+    margin: 0;
+    font-family: "Comic Sans MS";
+}
+
+.textLorem {
+    font-family: "Comic Sans MS";
+}
+
+.image {
+    margin-right: 35px;
+}
+
+.titleBox {
+    color: #6CBFEC;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lorem {
+    margin: 150px 0 20px 0;
+}
+
+.mainDiv {
+    border: 1px solid black;
+    width: 950px;
+    border-radius: 13px;
+    padding: 25px;
+    margin: auto;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.title {
+    color: #6CBFEC;
+    text-align: center;
+    font-family: "Comic Sans MS";
+}
+
+.imageText {
+    display: flex;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 30px;
+
+}
+
+.text {
+    font-family: "Comic Sans MS";
+}
+
+.cube {
+    border: 1px solid black;
+    width: 265px;
+    background-color: #ececec;
+    margin: 20px;
+    padding: 10px;
+}
+
+.usersDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.img_user {
+    width: 265px;
+    height: 265px;
+    background-color: #F4F4F4;
+}
+
+.img {
+    margin-left: 10px;
+}
+
+.glavDiv {
+    border: 2px solid #C14D4D;
+    width: 1000px;
+    height: 865px;
+    margin: auto;
+}
+
+.container {
+    background-image: url("../Html Css/photo/pattern.jpg");
+    width: 100vw;
+}
+
+.redColor {
+    height: 200px;
+    background-color: #C14D4D;
+}
+
+.greyColor {
+    border: 1px solid #9E611E;
+    width: 698px;
+    height: 200px;
+    background-color: #ECECEC;
+}
+
+.greyColor2 {
+    border: 1px solid #9E611E;
+    width: 292px;
+    height: 300px;
+    background-color: #ECECEC;
+}
+
+.greyDiv {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #9E611E;
+}
+
+.smallDiv {
+    width: 700px;
+    height: 100px;
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.smallCube {
+    border: 1px solid #9E611E;
+    width: 170px;
+    height: 99px;
+    background-color: #ECECEC;
+}
+
+.colorWhite {
+    height: 300px;
+    background-color: white;
+}
+
+.redColor2 {
+    height: 65px;
+    background-color: #C14D4D;
+}

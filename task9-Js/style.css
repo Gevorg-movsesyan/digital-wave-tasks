@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+.containerone {
+    width: 450px;
+    height: 350px;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: auto;
+    background-color: rgb(237, 232, 232);
+}
+
+.containertwo {
+    width: 450px;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 20px;
+    overflow: auto;
+    background-color: rgb(237, 232, 232);
+}
+
+button {
+    border: 1px solid black;
+    width: 120px;
+    height: 30px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+}

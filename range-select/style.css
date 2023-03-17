@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mainDiv {
+    background-color: #F7DDB1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cube {
+    width: 75px;
+    height: 75px;
+    background-color: green;
+    margin: 10px;
+}
